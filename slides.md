@@ -398,6 +398,11 @@ import {foo} from '../js/foo.js';
 
 ---
 
+# [fit] `.mjs` means __no parsing__:
+# [fit] every module must advertise api in name
+
+---
+
 ![fit](images/table-flip.gif)
 
 ^ How the community reacted to .mjs.
@@ -432,6 +437,8 @@ import {foo} from '../js/foo.js';
 
 # [fit] our aim was to prove with a bit of __parsing__
 # [fit] you could get a lot of __usability__
+
+^ A little bit of parsing entry points is a little bit of perf investment at process launch.
 
 ---
 
@@ -486,7 +493,7 @@ import {foo} from '../js/foo.js';
 ---
 
 # [fit] I didn't want our solution adopted.
-# [fit] I wanted the conversation __restarted__.
+# [fit] I wanted the talking phase __restarted__.
 
 ---
 
@@ -508,6 +515,8 @@ import {foo} from '../js/foo.js';
 
 # [fit] see `github.com/nodejs/modules`
 # [fit] to understand how complicated the __tradeoffs__ are
+
+^ Again tech problems are easy! The node team will absolutely solve the technical problems, once they arrive at the right set of tradeoffs.
 
 ---
 
@@ -612,14 +621,15 @@ export default class Widget { ... }
 
 ---
 
-# [fit] the tradeoff is a lot of __parsing__
-# [fit] for a lot of __features__
+# [fit] std/esm sets the tradeoff dial to
+# [fit] max __parsing__ for a lot of __features__
 
 ^ See the repo for this talk for some code samples.
 
 ---
 
 # [fit] is std/esm the future? __not exactly.__
+# [fit] unclear where the tradeoff dial will point.
 
 ^ This is better than the npm solution was. don't depend on being able to mix & match.
 
