@@ -387,8 +387,8 @@ import {foo} from '../js/foo.js';
 
 ---
 
-# [fit] so it proposed `.mjs` as a file suffix for
-# [fit] javascript with certain features
+# [fit] so it proposed `.mjs` as a __file suffix__ for
+# [fit] javascript using the esm api
 
 ---
 
@@ -424,11 +424,18 @@ import {foo} from '../js/foo.js';
 
 ---
 
+# [fit] our aim was to prove with a bit of __parsing__
+# [fit] you could get a lot of __usability__
+
+---
+
 # [fit] reception was __mixed__
 
 ---
 
 ![fit](images/eich.png)
+
+^ Brendan Eich liked it, in a bit of a nice moment for me.
 
 ---
 
@@ -475,35 +482,33 @@ import {foo} from '../js/foo.js';
 
 ---
 
-# [fit] node has a __modules working group__
-# [fit] doing the hard work of talking
+# [fit] node has an unchartered [modules team](https://github.com/nodejs/modules)
+# [fit] doing the hard work of __talking__
 
 ---
 
 # [fit] it started with __use cases__
+# [fit] and it's continuing with some deep issues
 
 ---
 
-TODO TODO some examples of use cases
+# [fit] see `github.com/nodejs/modules`
+# [fit] to understand how complicated the tradeoffs are
 
 ---
 
 # [fit] this brings us to the __present state__
-# [fit] not quite __there__ yet, but soon!
-
----
-
-# [fit] you can use ESM __now__ if you want
+# [fit] ESM is not quite __there__ yet, but soon!
 
 ---
 
 # [fit] if you are using babel in your build
-# [fit] you have __no reason not to__
+# [fit] you have no reason not to __use ESM now__
 
 ---
 
-# [fit] those of us in server-side nodeland
-# [fit] had __no other options__ until recently
+# [fit] those of us not using Babel had
+# [fit] __few options__ until recently
 
 ---
 
@@ -553,7 +558,7 @@ https://github.com/standard-things/esm
 
 ---
 
-# [fit] to use ESM in node __right now__
+# [fit] ESM in node without a __build__ step:
 # [fit] `npm init esm -y`
 
 ---
@@ -562,7 +567,7 @@ https://github.com/standard-things/esm
 
 ---
 
-# [fit] transpilation on the fly by
+# [fit] transpilation on the __fly__ by
 # [fit] monkey-patching the `module` object
 
 ---
@@ -587,54 +592,55 @@ export default class Widget { ... }
 
 ---
 
+# [fit] the tradeoff is a lot of __parsing__
+# [fit] for a lot of __features__
+
+---
+
 # [fit] see __talk repo__ for code examples:
 # [fit] [github.com/ceejbot/future-of-modules](https://github.com/ceejbot/future-of-modules)
 
 ---
 
-# [fit] is node going to end up there?
-# [fit] I hope so!
+# [fit] is std/esm the future? not exactly.
 
 ^ This is better than the npm solution was.
 
 ---
 
+# [fit] don't depend on being able to __mix & match__
+
+---
+
 # [fit] so what is the __future of modules__?
+
+
+---
+
+# [fit] the future of node is __front-end__
+# [fit] the future of node is using common __standards__
 
 ---
 
 # [fit] learn the __syntax__ now if you haven't yet
-
----
-
-# [fit] this trend will continue:
-# [fit] the future of node is __front-end__
-
----
-
-# [fit] the future of node is __you__
-
----
-
 # [fit] future-you will __assume__ ESM not CJS
 
 ---
 
-# [fit] you'll install trillions of packages from __npm__
-# [fit] but they'll all be __ESM__ not CJS
+# [fit] CommonJS modules won't __go away__
+# [fit] you'll just use __fewer__ of them
+
+^ You'll still install trillions of packages from npm, but they'll be esm.
 
 ---
 
-# [fit] CommonJS modules won't __go away__ or stop working
-# [fit] you'll slowly use more & more ESM
+# [fit] migrate when you have a __reason__
+# [fit] don't migrate now if you don't need to
 
 ---
 
-# [fit] no need to migrate until you have a reason
-
----
-
-# [fit] the future of js modules will be __just fine__
+# [fit] the future of js modules is __ESM__
+# [fit] and it will be __just fine__
 
 ---
 
