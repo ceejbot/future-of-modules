@@ -30,6 +30,10 @@
 
 ---
 
+# [fit] what's a __module__ anyway?
+
+---
+
 # [fit] a __module__ is a __scope__ plus
 # [fit] an __API__ that lets you reuse it
 
