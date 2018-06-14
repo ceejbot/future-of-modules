@@ -79,10 +79,10 @@ console.log(`${bold('hello')} ${yellow('world!')}`);
 ---
 
 ```js
-const chalk = { red, green, blue, bold, ...};
+const mycolorapi = { red, green, blue, bold, ...};
 
-module.exports = chalk; // cjs
-export default chalk; // esm
+module.exports = mycolorapi; // cjs
+export default mycolorapi; // esm
 ```
 
 ---
@@ -119,14 +119,14 @@ export default chalk; // esm
 ---
 
 # [fit] in __2009__ JS had no module spec
-# [fit] but __CommonJS__ has one
+# [fit] but __CommonJS__ had one
 
 ---
 
 # [fit] there was a lot of __server-side js__ going on
-# [fit] and it needed a module spec
+# [fit] and people needed a way to share code
 
-^ RingoJS, narwhal, and node.js
+^ RingoJS, narwhal, and node.js. Only one survives, really.
 
 ---
 
@@ -215,8 +215,8 @@ const other = require('./chalk');
 
 ---
 
-# [fit] static analysis is far more useful for FE
-# [fit] to minimize __download burden__
+# [fit] static analysis is important
+# [fit] when your target is the __browser__
 
 ^ I do want to get into one point, though.
 
@@ -229,8 +229,8 @@ const other = require('./chalk');
 
 ---
 
-# [fit] deep analysis & tree shaking are important
-# [fit] when your target is the __browser__
+# [fit] static analysis & tree shaking help
+# [fit] minimize __download burden__ in FE
 
 ^ That extra copy of that package is a whole extra megabyte to download on mobile!
 
@@ -562,8 +562,8 @@ https://github.com/standard-things/esm
 
 ---
 
-# [fit] no transpilation
-# [fit] monkey-patch the `module` object
+# [fit] transpilation on the fly by
+# [fit] monkey-patching the `module` object
 
 ---
 
