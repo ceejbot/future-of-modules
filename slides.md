@@ -304,18 +304,16 @@ import {foo} from '../js/foo.js';
 ---
 
 # [fit] node's loader is part of its __magic__
-# [fit] and there's no magic in spec-compliant ESM loading
+# [fit] there's no magic in spec-compliant ESM loading
 
 ^ but babel sure made it look good and behave nicely
 
 ---
 
 # [fit] babel set some __expectations__
-# [fit] about how esm in node should behave
+# [fit] for that magical resolution algorithm
 
----
-
-# [fit] there's no escape from __build steps__ in sight
+^ Babel also gave us all the illusion that the syntax is working today.
 
 ---
 
@@ -324,9 +322,6 @@ import {foo} from '../js/foo.js';
 ---
 
 # [fit] node's been using CJS for __9 years__
-
----
-
 # [fit] npm has __725K__ public packages
 
 ^ most of these are CJS, or they're cjs via babel
@@ -341,10 +336,16 @@ import {foo} from '../js/foo.js';
 # [fit] node should use __JS standards__
 # [fit] when those standards exist
 
+^ This makes the experience of javascript closer to one javascript
+
 ---
 
 # [fit] therefore node should __use ESM__.
 # [fit] but what does this mean?
+
+---
+
+# [fit] the devil is in the __details__
 
 ---
 
@@ -376,7 +377,8 @@ import {foo} from '../js/foo.js';
 
 ---
 
-# [fit] how do you know __which is which__ without parsing?
+# [fit] how do you know __which is which__
+# [fit] without parsing everything?
 
 ---
 
@@ -394,7 +396,7 @@ import {foo} from '../js/foo.js';
 
 ![fit](images/table-flip.gif)
 
-^ Nobody particularly liked that.
+^ How the community reacted to .mjs.
 
 ---
 
@@ -419,7 +421,7 @@ import {foo} from '../js/foo.js';
 
 ---
 
-# [fit] no mjs, __parse__ entry point to figure out
+# [fit] no mjs, __parse__ entry points;
 # [fit] require module consumer know its api __in advance__
 
 ---
@@ -474,7 +476,13 @@ import {foo} from '../js/foo.js';
 
 ---
 
-# [fit] the node modules problem needed more __talking__
+# [fit] the node modules problem
+# [fit] needed more __talking__
+
+---
+
+# [fit] I didn't want our solution adopted.
+# [fit] I wanted the conversation __restarted__.
 
 ---
 
@@ -488,12 +496,14 @@ import {foo} from '../js/foo.js';
 ---
 
 # [fit] it started with __use cases__
-# [fit] and it's continuing with some deep issues
+# [fit] and it's continuing with some __deep questions__
+
+^ Myles was right that parts of this are hard-- the people parts, not the technical parts IMO.
 
 ---
 
 # [fit] see `github.com/nodejs/modules`
-# [fit] to understand how complicated the tradeoffs are
+# [fit] to understand how complicated the __tradeoffs__ are
 
 ---
 
@@ -512,7 +522,7 @@ import {foo} from '../js/foo.js';
 
 ---
 
-https://github.com/standard-things/esm
+# [fit] github.com/standard-things/esm
 
 ^ from the author of lodash, somebody involved in the modules work in node & super-involved in js in browsers at MS
 
@@ -539,6 +549,8 @@ https://github.com/standard-things/esm
 # [fit] `npm audit` & `npm audit fix`
 # [fit] report and __automatically fix__
 # [fit] known vulnerabilities in your dep tree
+
+^ please keep your npm cli updated; we're hard at work making it better
 
 ---
 
@@ -592,28 +604,24 @@ export default class Widget { ... }
 
 ---
 
+![fit](images/clarkson-nodding.gif)
+
+---
+
 # [fit] the tradeoff is a lot of __parsing__
 # [fit] for a lot of __features__
 
----
-
-# [fit] see __talk repo__ for code examples:
-# [fit] [github.com/ceejbot/future-of-modules](https://github.com/ceejbot/future-of-modules)
+^ See the repo for this talk for some code samples.
 
 ---
 
-# [fit] is std/esm the future? not exactly.
+# [fit] is std/esm the future? __not exactly.__
 
-^ This is better than the npm solution was.
-
----
-
-# [fit] don't depend on being able to __mix & match__
+^ This is better than the npm solution was. don't depend on being able to mix & match.
 
 ---
 
 # [fit] so what is the __future of modules__?
-
 
 ---
 
