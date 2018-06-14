@@ -1,0 +1,17 @@
+{
+  "name": "foozle",
+  "version": "1.0.0",
+  "dependencies": {
+    "chalk": "~2.4.1",
+    "esm": "~3.0.48",
+    "farmfilter": "~1.1.0"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "license": "ISC",
+  "main": "index.js",
+  "module": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
