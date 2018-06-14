@@ -1,5 +1,6 @@
 {
   "name": "foozle",
+  "description": "An extremely silly way to check if a string is probably an English word.",
   "version": "1.0.0",
   "dependencies": {
     "chalk": "~2.4.1",
@@ -12,6 +13,7 @@
   "main": "index.js",
   "module": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   }
 }

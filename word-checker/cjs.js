@@ -1,3 +1,6 @@
 module.exports = {
-	style: 'cjs'
+	style: 'cjs',
+	yellow: 'yellow',
+	bold: 'bold',
+	green: 'green'
 };

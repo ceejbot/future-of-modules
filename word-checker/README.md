@@ -4,6 +4,8 @@ An extremely silly way to check if a string is probably an English word. Assumin
 
 But really it's a way to demonstrate some small bits of ESM syntax in use alongside CommonJS.
 
+Run with `node index.js` or `npm start`.
+
 ## LICENSE
 
 ISC

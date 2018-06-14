@@ -1,4 +1,9 @@
-# The future of modules
+# [fit] The future of modules
+
+---
+
+# [fit] The future of __javascript__
+# [fit] modules & __node__
 
 ---
 
@@ -17,8 +22,8 @@
 
 ---
 
-# [fit] if you use code from npm
-# [fit] the future of the language
+# [fit] if you use code from __npm__
+# [fit] the future of modules
 # [fit] matters to __you__
 
 ^ if you use packages from npm -- and you do -- this matters to you
@@ -79,10 +84,10 @@ console.log(`${bold('hello')} ${yellow('world!')}`);
 ---
 
 ```js
-const mycolorapi = { red, green, blue, bold, ...};
+function red(word) = { ... }; // etc
 
-module.exports = mycolorapi; // cjs
-export default mycolorapi; // esm
+module.exports = { red, green, blue, bold, ...}; // cjs
+export { red, green, blue, bold, ...}; // esm
 ```
 
 ---
@@ -177,8 +182,7 @@ const other = require('./chalk');
 
 ---
 
-# [fit] `import` & `export`
-# [fit] arrived in __ES2015__
+# [fit] `import` & `export` arrived in __ES2015__
 
 ^ You'll note that this is 3 years ago, and 6 after node got underway.
 
@@ -269,7 +273,7 @@ const other = require('./chalk');
 ---
 
 # [fit] babel transpiled the ESM syntax into CJS
-# [fit] and the __future__ looked like it was __now__
+# [fit] and the __future__ looked like it was __here__
 
 ---
 
@@ -554,8 +558,8 @@ import {foo} from '../js/foo.js';
 
 ---
 
-# [fit] __npm, Inc__, is a company that
-# [fit] sells goods and services
+# [fit] __npm__, Inc, is a company that
+# [fit] sells goods and __services__
 
 ---
 

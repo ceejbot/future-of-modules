@@ -12,7 +12,7 @@ import cjs from './cjs.js';
 console.log(cjs);
 
 // Now we require a file that uses the esm API to export.
-const esm = require('./esm.js').default;
+const esm = require('./esm.js');
 console.log(esm);
 
 function checkForWords(list)
