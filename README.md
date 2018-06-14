@@ -5,8 +5,8 @@ A talk for Fluent 2018 in San Jose.
 ## Slides:
 
 * [slide source in markdown format](./slides.md)
-* [rendered slides](./slides.pdf)
-* SpeakerDeck TBD
+* [rendered slides as a PDF](./slides.pdf)
+* [SpeakerDeck](https://speakerdeck.com/ceejbot/the-future-of-javascript-modules-in-node)
 
 ## Code examples
 
@@ -25,5 +25,7 @@ the unchartered [node modules team](https://github.com/nodejs/modules)
 [Lin Clark's modules deep-dive](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/)
 
 [One Javascript](http://2ality.com/2014/12/one-javascript.html)
+
+JDD's [esm](https://github.com/standard-things/esm) for monkey-patching!
 
 All images are Top Gear gifs from the Clarkson/Hammond/May era, found on Tumblr.
