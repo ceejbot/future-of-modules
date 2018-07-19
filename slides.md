@@ -7,11 +7,16 @@
 
 ---
 
+# [fit] this presentation has a few animated gifs
+# [fit] with a mostly-predictable subject
+
+---
+
 ![left, fit](images/npm.png)
 # [fit] C J Silverio
 # [fit] CTO, __@ceejbot__
 
-^ hi, I'm Ceej. you may know me from such companies as npm. How many of you use npm?
+^ hi, I'm Ceej. you may know me from such companies as npm, which is super-obscure.
 
 ---
 
@@ -32,12 +37,18 @@
 
 # [fit] what's a __module__ anyway?
 
+^ let's start with some jargon, node world
+
 ---
 
 # [fit] a __module__ is a __scope__ plus
 # [fit] an __API__ that lets you reuse it
 
-^ let's start with some jargon
+---
+
+# [fit] module syntax allows you to express
+# [fit] what you're __sharing__
+# [fit] what you're __re-using__
 
 ---
 
@@ -53,9 +64,8 @@
 
 ---
 
-# [fit] module syntax:
-# [fit] this is what I'm __sharing__
-# [fit] this is what I'm __re-using__
+# [fit] a package is a __node.js__ concept
+# [fit] as is the `package.json`
 
 ---
 
@@ -106,7 +116,7 @@ export { red, green, blue, bold, ...}; // esm
 
 ---
 
-![fit](images/aaaaigh.gif)
+![fit](images/jump-out-window.gif)
 
 ---
 
@@ -127,8 +137,10 @@ export { red, green, blue, bold, ...}; // esm
 
 ---
 
-# [fit] in __2009__ JS had no module spec
-# [fit] but __CommonJS__ had one
+# [fit] in __2009__ JS had no official module spec
+# [fit] but was beginning to figure out it needed one
+
+^ remember AMD & require.js?
 
 ---
 
@@ -139,10 +151,21 @@ export { red, green, blue, bold, ...}; // esm
 
 ---
 
+# [fit] __CommonJS__ pulled together some
+# [fit] common server-side patterns
+
+---
+
 # [fit] __node__ adopted the CommonJS syntax
 # [fit] and wrote a __loader__
 
 ^ The loader has some mis-features and things its authors regretted, but it was good enough.
+
+---
+
+# [fit] loaders, it turns out, are important
+
+^ require.js was the *loader* for the AMD spec
 
 ---
 
@@ -168,13 +191,13 @@ const other = require('./chalk');
 
 ---
 
-# [fit] browser-side js was still __concatenating files__
+# [fit] browser-side js was __concatenating files__
 
 ^ also minifying them, to be fair
 
 ---
 
-![](images/chin-stroke.gif)
+![fit](images/nodding.gif)
 
 ^ tbh I think the node side had it a lot better during these years
 
@@ -197,12 +220,6 @@ const other = require('./chalk');
 
 ^ This is normal & expected and perfectly fine.
 
-----
-
-# [fit] inherently __asynchronous__ not synchronous
-
-^ This is unlike cjs, but in practice you don't care
-
 ---
 
 # [fit] \(mostly) not dynamic:
@@ -214,7 +231,6 @@ const other = require('./chalk');
 # [fit] the `import()` variation is, however, dynamic
 
 ---
-
 
 # [fit] see __Lin Clark__'s [cartoon deep-dive](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/)
 # [fit] for an exploration of the details
@@ -233,27 +249,27 @@ const other = require('./chalk');
 # [fit] node's nested deps are a great solution
 # [fit] server-side, where __disk space is cheap__
 
-^ That extra copy of the package is only a meg on disk, who cares?
+^ That extra copy of lodash is only 1K on disk, who cares?
 
 ---
 
 # [fit] static analysis & tree shaking help
 # [fit] minimize __download burden__ in FE
 
-^ That extra copy of that package is a whole extra megabyte to download on mobile!
+^ That extra copy of that package is a whole extra kilobyte to download on mobile!
 
 ---
 
-![fit](images/speed.gif)
+![fit](images/wincing.gif)
 
 ---
 
-# [fit] so __front-end__ focused developers want ESM
+# [fit] so __front-end__ developers want ESM
 
 ---
 
 # [fit] in between 2009 and now
-# [fit] something very __interesting__ happened
+# [fit] something __interesting__ happened
 
 ---
 
@@ -281,8 +297,17 @@ const other = require('./chalk');
 
 ---
 
-# [fit] but babel was CJS __behind the scenes__
-# [fit] which meant node's loader was doing the work
+# [fit] the future is __not__ here
+
+---
+
+# [fit] babel is CJS __behind the scenes__
+# [fit] node's loader is doing the work
+
+---
+
+# [fit] there are effectively 3 module specs in use
+# [fit] commonjs, babel-esm, and esm
 
 ---
 
@@ -390,6 +415,17 @@ import {foo} from '../js/foo.js';
 
 ---
 
+# [fit] parse __goal detection__ is a problem
+
+---
+
+# [fit] parse goal detection is the __only__ problem
+# [fit] with integrating esm into node, IMO
+
+^ my opinion
+
+---
+
 # [fit] node has no `type="module"` marker
 # [fit] for its __entry points__
 
@@ -400,6 +436,8 @@ import {foo} from '../js/foo.js';
 # [fit] so it proposed `.mjs` as a __file suffix__ for
 # [fit] javascript using the esm api
 
+^ the infamous michael jackson script
+
 ---
 
 # [fit] `.mjs` means __no parsing__:
@@ -407,13 +445,9 @@ import {foo} from '../js/foo.js';
 
 ---
 
-![fit](images/table-flip.gif)
+![fit](images/nononono.gif)
 
-^ How the community reacted to .mjs.
-
----
-
-# [fit] I'm the Stig __table-flipping__.
+^ how I reacted to michael jackson script
 
 ---
 
@@ -456,9 +490,9 @@ import {foo} from '../js/foo.js';
 
 ---
 
-![fit](images/may_smoking_engine.gif)
+![fit](images/broom.gif)
 
-^ the node project was less happy. one might say it was ambitious but rubbish
+^ the node project was less happy. I am Clara in this gif and the node project is the Doctor
 
 ---
 
@@ -501,7 +535,7 @@ import {foo} from '../js/foo.js';
 
 ---
 
-![fit](images/great-news-what.gif)
+![fit](images/doctor_dad_dance.gif)
 
 ---
 
@@ -519,6 +553,11 @@ import {foo} from '../js/foo.js';
 
 # [fit] see `github.com/nodejs/modules`
 # [fit] to understand how complicated the __tradeoffs__ are
+
+---
+
+# [fit] all of the discussion is about a few
+# [fit] hundred lines of javascript at the surface
 
 ^ Again tech problems are easy! The node team will absolutely solve the technical problems, once they arrive at the right set of tradeoffs.
 
@@ -571,19 +610,7 @@ import {foo} from '../js/foo.js';
 
 ---
 
-# [fit] __npm__, Inc, is a company that
-# [fit] sells goods and __services__
-
----
-
-# [fit] you can pay us to run a very nice
-# [fit] __single-tenant registry__ for you
-
-^ le gasp
-
----
-
-# [fit] now back to __modules__...
+# [fit] update! update! ok! ok!
 
 ---
 
@@ -592,50 +619,20 @@ import {foo} from '../js/foo.js';
 
 ---
 
-![fit](images/run-hug.gif)
-
----
-
-# [fit] transpilation on the __fly__ by
-# [fit] monkey-patching the `module` object
-
----
-
-```js
-require = require('esm')(module);
-const Widget = require('./main.js').default;
-
-// over in main.js
-import fs from 'fs';
-import cjs from './cjs.js';
-const esm = require('./esm.js');
-export default class Widget { ... }
-```
-
-^ Entry point is CJS. Everything from there on can mix the two.
-
----
-
-# [fit] Q: Was that __transparent interop__?
-# [fit] A: I believe it was, Bob.
-
----
-
-![fit](images/clarkson-nodding.gif)
-
----
-
 # [fit] std/esm sets the tradeoff dial to
 # [fit] max __parsing__ for a lot of __features__
 
-^ See the repo for this talk for some code samples.
+---
+
+# [fit] is std/esm the future? not exactly.
+# [fit] unclear where the __tradeoff dial__ will point.
+
+^ This is better than the npm solution was. don't depend on being able to mix & match.
 
 ---
 
-# [fit] is std/esm the future? __not exactly.__
-# [fit] unclear where the tradeoff dial will point.
-
-^ This is better than the npm solution was. don't depend on being able to mix & match.
+# [fit] the node project is conflicted about whether
+# [fit] to privilege the __transition__ or the __destination__
 
 ---
 
@@ -665,12 +662,21 @@ export default class Widget { ... }
 
 ---
 
+# [fit] __eventually__ browsers will have a loader spec
+# [fit] __eventually__ node will support it all natively
+
+---
+
+# [fit] eventually you'll stop typing `require()`
+
+---
+
 # [fit] the future of js modules is __ESM__
 # [fit] and it will be __just fine__
 
 ---
 
-![fit](images/and-on-that-bombshell.jpg)
+![fit](images/windmill.gif)
 
 ---
 
