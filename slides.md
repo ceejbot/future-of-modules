@@ -45,9 +45,11 @@
 
 ---
 
-# [fit] if you use code from __npm__
-# [fit] the future of modules
-# [fit] matters to __you__
+# [fit] raise your hand if you use code from __npm__
+
+---
+
+![fit](images/raising-hand.gif)
 
 ^ if you use packages from npm -- and you do -- this matters to you
 
@@ -253,7 +255,7 @@ const other = require('./chalk');
 
 ---
 
-# [fit] __TC39__ started working on the problem in 2009
+# [fit] __TC39__ also started working on the problem in 2009
 
 ^ TC39 is the technical committee inside ECMA that defines the Ecmascript spec
 
@@ -531,6 +533,10 @@ import {foo} from '../js/foo.js';
 
 ---
 
+![fit](images/dusting-off-hands.gif)
+
+---
+
 # [fit] reception was __mixed__
 
 ---
@@ -594,12 +600,9 @@ import {foo} from '../js/foo.js';
 ---
 
 # [fit] github.com/standard-things/esm
+# [fit] `npm init esm -y`
 
 ^ from the author of lodash, somebody involved in the modules work in node & super-involved in js in browsers at MS
-
----
-
-# [fit] `npm init esm -y`
 
 ---
 
@@ -628,9 +631,7 @@ import {foo} from '../js/foo.js';
 # [fit] also, please please please
 # [fit] __turn on two-factor auth__
 
----
-
-# [fit] lecture over. back to the lecture.
+^ lecture over. back to the lecture.
 
 ---
 
@@ -658,7 +659,7 @@ import {foo} from '../js/foo.js';
 
 ---
 
-![fit](images/doctor_dad_dance.gif)
+![fit](images/looking-around.gif)
 
 ---
 
@@ -712,6 +713,10 @@ import {foo} from '../js/foo.js';
 ---
 
 # [fit] so what is the __future of modules__?
+
+---
+
+![](images/shrug-malcolm.gif)
 
 ---
 

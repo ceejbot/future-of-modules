@@ -28,4 +28,4 @@ the unchartered [node modules team](https://github.com/nodejs/modules)
 
 JDD's [esm](https://github.com/standard-things/esm) for monkey-patching!
 
-All images are Top Gear gifs from the Clarkson/Hammond/May era, found on Tumblr.
+All images are of the Twelfth Doctor. Well, except for the one of Malcolm Tucker.
