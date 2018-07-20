@@ -1,9 +1,5 @@
 # [fit] The future of modules
-
----
-
-# [fit] The future of __javascript__
-# [fit] modules & __node__
+# [fit] in __javascript & node__
 
 ---
 
@@ -27,11 +23,50 @@
 
 ---
 
+# [fit] the __shared code__ ecosystem JS has
+# [fit] is unique & amazing
+
+---
+
+# [fit] it's __larger__ than anything before it
+# [fit] in sheer module count & in usage
+
+---
+
+# [fit] the javascript ecosystem turns its npm tap
+# [fit] and shared code __pours out__
+
+^ you use npm thoughtlessly
+
+---
+
+# [fit] you use node's __module system__
+# [fit] equally thoughtlessly (this is good)
+
+---
+
 # [fit] if you use code from __npm__
 # [fit] the future of modules
 # [fit] matters to __you__
 
 ^ if you use packages from npm -- and you do -- this matters to you
+
+---
+
+# [fit] what's up with the __future__?
+# [fit] why not just carry on?
+
+---
+
+# [fit] javascript-the-language has a
+# [fit] new official __module standard__
+# [fit] to go with its __defacto standard__
+
+---
+
+# [fit] you'll have to __think__ again as a results
+
+^ but let's back up
 
 ---
 
@@ -52,6 +87,12 @@
 
 ---
 
+![fit](images/lego-doctor.jpg)
+
+^ the module standard is the Lego brick nubs. you can stack all those varying bricks because they all have the same nub spacing
+
+---
+
 # [fit] __files__ are modules
 # [fit] groups of files can be
 
@@ -66,6 +107,11 @@
 
 # [fit] a package is a __node.js__ concept
 # [fit] as is the `package.json`
+
+---
+
+# [fit] `require()` is a node.js thing too,
+# [fit] or rather, __CommonJS__
 
 ---
 
@@ -118,6 +164,8 @@ export { red, green, blue, bold, ...}; // esm
 
 ![fit](images/jump-out-window.gif)
 
+^ the transition has taken years &  it's still not in a __healthy__ place
+
 ---
 
 # [fit] node needs __both__
@@ -125,15 +173,16 @@ export { red, green, blue, bold, ...}; // esm
 
 ---
 
-# [fit] __ESM__ is the future
-# [fit] of modular JavaScript
+# [fit] we've got one module system now
+# [fit] we'll have a different one in the future
+# [fit] the in-between is where the __mess__ is
 
 ---
 
 # [fit] in order to understand the __future__
 # [fit] we must first understand the __past__
 
-^ Why was I resentful at first? Why am I okay now? What's going to happen to all those modules on npm?
+^ Let's roll back a bit & figure out why we have two standards
 
 ---
 
@@ -163,7 +212,7 @@ export { red, green, blue, bold, ...}; // esm
 
 ---
 
-# [fit] loaders, it turns out, are important
+# [fit] __loaders__, it turns out, are important
 
 ^ require.js was the *loader* for the AMD spec
 
@@ -192,12 +241,13 @@ const other = require('./chalk');
 ---
 
 # [fit] browser-side js was __concatenating files__
+# [fit] \(mostly; the brave used AMD)
 
 ^ also minifying them, to be fair
 
 ---
 
-![fit](images/nodding.gif)
+![fit](images/face-scratch.gif)
 
 ^ tbh I think the node side had it a lot better during these years
 
@@ -287,13 +337,12 @@ const other = require('./chalk');
 
 ---
 
-# [fit] __transpilation__ took off
-# [fit] __babel__ was the new hotness
+# [fit] babel transpiled the ESM syntax into CJS
+# [fit] and the __future__ looked like it was __here__
 
 ---
 
-# [fit] babel transpiled the ESM syntax into CJS
-# [fit] and the __future__ looked like it was __here__
+![fit](images/reversing-polarity-1.gif)
 
 ---
 
@@ -306,8 +355,8 @@ const other = require('./chalk');
 
 ---
 
-# [fit] there are effectively 3 module specs in use
-# [fit] commonjs, babel-esm, and esm
+# [fit] there are effectively __3__ module specs
+# [fit] commonjs, babel-esm, & esm
 
 ---
 
@@ -350,7 +399,7 @@ import {foo} from '../js/foo.js';
 
 ---
 
-# [fit] meanwhile, back in __Gotham City__...
+![fit](images/reversing-polarity-2.gif)
 
 ---
 
@@ -378,18 +427,13 @@ import {foo} from '../js/foo.js';
 
 ---
 
-# [fit] the devil is in the __details__
-
----
-
-# [fit] ESM in node looked like
-# [fit] it was __not going good places__
+# [fit] figuring this out has taken __since 2015__
 
 ^ I had sorta been hoping the whole thing just went away.
 
 ---
 
-# [fit] very depressing talk by __Myles Borins__
+# [fit] depressing talk by __Myles Borins__
 # [fit] about how hard the __integration__ was
 
 ^ Why is it hard?
@@ -415,7 +459,14 @@ import {foo} from '../js/foo.js';
 
 ---
 
-# [fit] parse __goal detection__ is a problem
+# [fit] node has no `type="module"` marker
+# [fit] for its __entry points__
+
+^ How do you tell what flavor of module you're looking at?
+
+---
+
+# [fit] __parse goal detection__, it turns out, is important
 
 ---
 
@@ -426,15 +477,15 @@ import {foo} from '../js/foo.js';
 
 ---
 
-# [fit] node has no `type="module"` marker
-# [fit] for its __entry points__
+# [fit] you can do it by parsing every single file __twice__!
+# [fit] the perf-focused node team didn't like this
 
-^ How do you tell what flavor of module you're looking at?
+^ understandably
 
 ---
 
-# [fit] so it proposed `.mjs` as a __file suffix__ for
-# [fit] javascript using the esm api
+# [fit] node proposed `.mjs` as a __file suffix__ for
+# [fit] js files that use the esm module api
 
 ^ the infamous michael jackson script
 
@@ -456,7 +507,7 @@ import {foo} from '../js/foo.js';
 
 ---
 
-![fit](images/how-hard-can-it-be.jpg)
+# [fit] how __hard__ can it be?
 
 ---
 
@@ -535,46 +586,8 @@ import {foo} from '../js/foo.js';
 
 ---
 
-![fit](images/doctor_dad_dance.gif)
-
----
-
-# [fit] node has an unchartered [modules team](https://github.com/nodejs/modules)
-# [fit] doing the hard work of __talking__
-
----
-
-# [fit] it started with __use cases__
-# [fit] and it's continuing with some __deep questions__
-
-^ Myles was right that parts of this are hard-- the people parts, not the technical parts IMO.
-
----
-
-# [fit] see `github.com/nodejs/modules`
-# [fit] to understand how complicated the __tradeoffs__ are
-
----
-
-# [fit] all of the discussion is about a few
-# [fit] hundred lines of javascript at the surface
-
-^ Again tech problems are easy! The node team will absolutely solve the technical problems, once they arrive at the right set of tradeoffs.
-
----
-
-# [fit] this brings us to the __present state__
-# [fit] ESM is not quite __there__ yet, but soon!
-
----
-
-# [fit] if you are using babel in your build
-# [fit] you have no reason not to __use ESM now__
-
----
-
-# [fit] those of us not using Babel had
-# [fit] __few options__ until recently
+# [fit] another project turns the tradeoff dial
+# [fit] __all the way__ to parsing
 
 ---
 
@@ -610,7 +623,12 @@ import {foo} from '../js/foo.js';
 
 ---
 
-# [fit] update! update! ok! ok!
+# [fit] also, please please please
+# [fit] __turn on two-factor auth__
+
+---
+
+# [fit] lecture over. back to the lecture.
 
 ---
 
@@ -620,19 +638,74 @@ import {foo} from '../js/foo.js';
 ---
 
 # [fit] std/esm sets the tradeoff dial to
-# [fit] max __parsing__ for a lot of __features__
+# [fit] max __parsing__ for a lot of __convenience__
 
 ---
 
-# [fit] is std/esm the future? not exactly.
+# [fit] parsing everything lets you use
+# [fit] whichever api you want, for all modules
+
+^ glorious abandon!
+
+---
+
+# [fit] is std/esm the future? probably not.
 # [fit] unclear where the __tradeoff dial__ will point.
 
 ^ This is better than the npm solution was. don't depend on being able to mix & match.
 
 ---
 
+![fit](images/doctor_dad_dance.gif)
+
+---
+
+# [fit] node has an unchartered [modules team](https://github.com/nodejs/modules)
+# [fit] doing the hard work of __talking__
+
+---
+
+# [fit] it started with __use cases__
+# [fit] and it's continuing with some __deep questions__
+
+^ Myles was right that parts of this are hard-- the people parts, not the technical parts IMO.
+
+---
+
+# [fit] see `github.com/nodejs/modules`
+# [fit] to understand how complicated the __tradeoffs__ are
+
+---
+
+# [fit] all of the discussion is about
+# [fit] a few hundred lines of javascript
+
+^ Again tech problems are easy! The node team will absolutely solve the technical problems, once they arrive at the right set of tradeoffs.
+
+---
+
+# [fit] content warning: __opinions__
+
+---
+
 # [fit] the node project is conflicted about whether
 # [fit] to privilege the __transition__ or the __destination__
+
+---
+
+# [fit] the desire to use either module api for all modules
+# [fit] is a desire to ease the __transition__
+
+---
+
+# [fit] transition costs might
+# [fit] stay with us __forever__
+
+---
+
+# [fit] the project needs to decide
+# [fit] __how much parsing__ it's willing to accept
+# [fit] __how much inconvenience__ it's willing to inflict
 
 ---
 
@@ -657,8 +730,8 @@ import {foo} from '../js/foo.js';
 
 ---
 
-# [fit] migrate when you have a __reason__
-# [fit] don't migrate now if you don't need to
+# [fit] if you're using babel
+# [fit] __go ahead__ & use esm syntax
 
 ---
 
@@ -668,6 +741,11 @@ import {foo} from '../js/foo.js';
 ---
 
 # [fit] eventually you'll stop typing `require()`
+
+---
+
+# [fit] this talk is an __artifact__ of a
+# [fit] specific point in time when it was messy
 
 ---
 
