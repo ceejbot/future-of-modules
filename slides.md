@@ -579,6 +579,8 @@ import {foo} from '../js/foo.js';
 # [fit] the node modules problem
 # [fit] needed more __talking__
 
+^ I've got opinions, but are these opinions the right ones for the long-term health of the node project?
+
 ---
 
 # [fit] I didn't want our solution adopted.
@@ -642,10 +644,10 @@ import {foo} from '../js/foo.js';
 
 ---
 
-# [fit] parsing everything lets you use
-# [fit] whichever api you want, for all modules
+# [fit] parsing __everything__ gives you the
+# [fit] vaunted "transparent interop"
 
-^ glorious abandon!
+^ glorious abandon! require(esm) import from cjs
 
 ---
 
@@ -678,7 +680,7 @@ import {foo} from '../js/foo.js';
 ---
 
 # [fit] all of the discussion is about
-# [fit] a few hundred lines of javascript
+# [fit] a __few hundred lines__ of javascript
 
 ^ Again tech problems are easy! The node team will absolutely solve the technical problems, once they arrive at the right set of tradeoffs.
 
