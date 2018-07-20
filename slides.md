@@ -40,11 +40,6 @@
 
 ---
 
-# [fit] you use node's __module system__
-# [fit] equally thoughtlessly (this is good)
-
----
-
 # [fit] raise your hand if you use code from __npm__
 
 ---
@@ -52,6 +47,12 @@
 ![fit](images/raising-hand.gif)
 
 ^ if you use packages from npm -- and you do -- this matters to you
+
+
+---
+
+# [fit] you use node's module system
+# [fit] so this __matters to you__
 
 ---
 
@@ -133,6 +134,8 @@ import chalk from 'chalk'; // esm
 
 console.log(chalk.bold('hello world!'));
 ```
+
+^ start switching fast-- this is not the point
 
 ---
 
@@ -317,6 +320,7 @@ const other = require('./chalk');
 ---
 
 # [fit] so __front-end__ developers want ESM
+# [fit] node developers might not care
 
 ---
 
@@ -554,9 +558,6 @@ import {foo} from '../js/foo.js';
 ---
 
 # [fit] __technical__ problems are easy
-
----
-
 # [fit] __people__ problems are hard
 
 ---
@@ -720,6 +721,16 @@ import {foo} from '../js/foo.js';
 
 ---
 
+# [fit] this is not really another
+# [fit] __depressing talk__ about esm in node!
+
+---
+
+# [fit] the __loader__ will get worked out
+# [fit] the tradeoff dial for __parse goals__ will get set
+
+---
+
 # [fit] the future of node is __front-end__
 # [fit] the future of node is using common __standards__
 
@@ -744,10 +755,7 @@ import {foo} from '../js/foo.js';
 
 # [fit] __eventually__ browsers will have a loader spec
 # [fit] __eventually__ node will support it all natively
-
----
-
-# [fit] eventually you'll stop typing `require()`
+# [fit] __eventually__ you'll stop typing `require()`
 
 ---
 
